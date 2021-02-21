@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+   		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+	    <title>Charlotte Downs Designer</title>
+	    <meta name="description" content="Charlotte Downs Designer">
+		<meta name="author" content="Charlotte Downs">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Styles -->
+		<link rel="stylesheet" href="css/main.css" type="text/css" media="all" />
+
+		<!-- Favicon -->
+		<link rel="icon" type="image/png" sizes="192x192"  href="/images/favicon-192x192.png">
+  		<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+ 		<link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96x96.png">
+ 		<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+
+ 		<!-- Script -->
+		<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+		<!-- Open Graph / Facebook -->
+	    <meta property="og:type" content="website">
+	    <meta property="og:url" content="https://cdownsdesign.com">
+	    <meta property="og:title" content="Charlotte Downs, Designer"/>
+	    <meta property="og:description" content="Hey, I'm Charlotte Downs, a multi-disciplinary designer in London, Wales and Bristol"/>
+	    <meta property="og:image" content=""/>
+
+	    <!-- Twitter -->
+	    <meta property="twitter:card" content="summary_large_image">
+		<meta property="twitter:url" content="https://cdownsdesign.com">
+		<meta property="twitter:title" content="Charlotte Downs, Designer">
+		<meta property="twitter:description" content="Hey, I'm Charlotte Downs, a multi-disciplinary designer in London, Wales and Bristol">
+		<meta property="twitter:image" content="/images/metatag.png">
+
+	
+
+	</head>
+	<body>
+		<div class="width-container">
+			<main class="main-wrapper">
+				<div id="about-me">
+					<h1 class="heading-m">Charlotte Downs</h1>
+					<p class="large-format"><span class="hidden">Charlotte Downs</span> I'm a multi-disciplinary designer.</p>
+					<p class="large-format">I currently work as an Interaction Designer on the <a href="https://design-system.service.gov.uk">GOV.UK Design System</a> team at the <a href="https://gds.blog.gov.uk/">Government Digital Service (GDS)</a>.</p>
+				</div>
+				<div class="projects-wrapper" id="projects">
+					<h2 class="heading-m">Selected Work</h2>
+					<p>Explore things I've worked on</p>
+					<div class="btn-group" id="myBtnContainer">
+						<button class="btn active" onclick="filterSelection('all')"> Show all</button>
+						<button class="btn" onclick="filterSelection('graphic')"> Graphic</button>
+						<button class="btn" onclick="filterSelection('interaction')"> Interaction</button>
+						<button class="btn" onclick="filterSelection('product')"> Product</button>
+						<button class="btn" onclick="filterSelection('service')"> Service</button>
+					</div>
+					<ul class="projects-wrap container">
+						<li class="filterDiv graphic interaction service">
+							<a class="project-box" href="/more-than-carrots.html">
+								<h3 class="heading-s">More Than Carrots</h3>
+								<p>An app to find new restaurants that are great at veggie - and at everything else</p>
+								<ul class="meta body-s">
+									<li class="role">
+										<span>team</span>
+									</li>
+									<li class="duration">
+										<span>3 years</span>
+									</li>
+								</ul>
+							</a>
+						</li>
+						<li class="filterDiv graphic interaction service product">
+							<a class="project-box" href="/project-power.html">
+								<h3 class="heading-s">Project Power</h3>
+								<p>A portable power pack that experiments with materials to improve battery sustainability</p>
+								<ul class="meta body-s">
+									<li class="role">
+										<span>project</span>
+									</li>
+									<li class="duration">
+										<span>3 months</span>
+									</li>
+								</ul>
+							</a>
+						</li>
+						<li class="filterDiv interaction service">
+							<a class="project-box" href="/indigoand.html">
+								 <h3 class="heading-s">Indigo &</h3>
+								 <p>Allows SMEs to sell into large organisation procurement frameworks</p>
+								 <ul class="meta body-s">
+									<li class="role">
+										<span>consultant</span>
+									</li>
+									<li class="duration">
+										<span>2 months</span>
+									</li>
+								</ul>
+							</a>
+						</li>
+						<li class="filterDiv graphic interaction product">
+							<a class="project-box" href="">
+								<h3 class="heading-s">Design Consulting - Cinter</h3>
+								<p>Building a business from scratch, equipping other businesses with design and prototyping expertise</p>
+								<ul class="meta body-s">
+									<li class="role">
+										<span>team</span>
+									</li>
+									<li class="duration">
+										<span>3 years</span>
+									</li>
+								</ul>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<footer>
+					<nav>
+						<ul>
+							<li>
+								<a href="mailto:charlotteldowns@gmail.com">Email me</a>
+							</li>
+							<li>
+								<a target="_blank" href="http://twitter.com/CharlotteLDowns">@CharlotteLDowns</a>
+							</li>
+						</ul>
+					</nav>
+				</footer>
+			</main>
+		</div>
+
+
+		
+
+		<script>
+			filterSelection("all")
+			function filterSelection(c) {
+			  var x, i;
+			  x = document.getElementsByClassName("filterDiv");
+			  if (c == "all") c = "";
+			  for (i = 0; i < x.length; i++) {
+			    w3RemoveClass(x[i], "show");
+			    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+			  }
+			}
+
+			function w3AddClass(element, name) {
+			  var i, arr1, arr2;
+			  arr1 = element.className.split(" ");
+			  arr2 = name.split(" ");
+			  for (i = 0; i < arr2.length; i++) {
+			    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+			  }
+			}
+
+			function w3RemoveClass(element, name) {
+			  var i, arr1, arr2;
+			  arr1 = element.className.split(" ");
+			  arr2 = name.split(" ");
+			  for (i = 0; i < arr2.length; i++) {
+			    while (arr1.indexOf(arr2[i]) > -1) {
+			      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+			    }
+			  }
+			  element.className = arr1.join(" ");
+			}
+
+			// Add active class to the current button (highlight it)
+			var btnContainer = document.getElementById("myBtnContainer");
+			var btns = btnContainer.getElementsByClassName("btn");
+			for (var i = 0; i < btns.length; i++) {
+			  btns[i].addEventListener("click", function(){
+			    var current = document.getElementsByClassName("active");
+			    current[0].className = current[0].className.replace(" active", "");
+			    this.className += " active";
+			  });
+			}
+		</script>
+
+	</body>
+</html>
