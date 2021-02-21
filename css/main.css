@@ -487,7 +487,8 @@ ul, li :not(.list-bullet li) {
 }
 
 .projects-wrap>li a:hover {
-	background: rgba(161, 205, 241, 0.4)
+	background: rgba(161, 205, 241, 0.4);
+	text-decoration: none;
 }
 
 ul.meta {
