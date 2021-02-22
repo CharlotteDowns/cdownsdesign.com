@@ -393,7 +393,6 @@ article {
 }
 
 article p {
-	color: #0b0c0c;
     font-family: "Cera-reg",arial,sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -608,7 +607,6 @@ ul.image-gallery {
 .enlarge, .Caption--faux {
     text-align: left;
     text-decoration: none;
-    color: #0b0c0c;
     font-family: "Cera-reg";
     cursor: pointer;
 }
