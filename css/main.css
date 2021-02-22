@@ -453,6 +453,10 @@ article p {
     line-height: 120%;
 }
 
+.large-format:last-of-type {
+	margin-bottom: 20px;
+}
+
 @media (min-width: 40.0625em) {
 	.large-format {
 		font-size: 48px;
