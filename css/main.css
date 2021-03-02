@@ -655,7 +655,13 @@ ul.image-gallery img {
 /* Footer */
 
 footer {
-	padding-top:40px;
+	padding-top:20px;
+}
+
+@media (min-width: 40.0625em) {
+	footer {
+		padding-top:40px;
+	}
 }
 
 footer ul {
@@ -672,7 +678,7 @@ footer ul li {
     font-size: 16px;
     font-size: 1rem;
     line-height: 1.25;
-    margin-bottom: 5px;
+    margin-bottom: 0px;
 }
 
 @media (min-width: 40.0625em) {
@@ -680,7 +686,6 @@ footer ul li {
 		font-size: 19px;
     	font-size: 1.1875rem;
     	line-height: 1.31579;
-    	margin-bottom: 20px;
     }
 }
 
@@ -690,7 +695,7 @@ footer ul li {
 .colour-changer {
 	position: fixed;
 	display: none;
-	bottom: 24px;
+	bottom: 32px;
 	right: 24px;
 	background: #ffffff;
 	color: #0b0c0c;
